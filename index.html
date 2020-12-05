@@ -22,13 +22,13 @@
         <!-- corpo -->
         <div class="main-playlist">
           <ul>
-            <li class=""><img src="img/home.svg" alt=""><a href="" class="bold">Home</a></li>
-            <li class=""><img src="img/search.svg" alt=""><a href="" class="bold">Cerca</a></li>
-            <li class=""><img src="img/libreria.svg" alt=""><a href="" class="bold">La tua libreria</a></li>
+            <li class=""><img src="img/home.svg" alt=""><a class="xs-hidden" href="" class="bold">Home</a></li>
+            <li class=""><img src="img/search.svg" alt=""><a class="xs-hidden" href="" class="bold">Cerca</a></li>
+            <li class=""><img src="img/libreria.svg" alt=""><a class="xs-hidden" href="" class="bold">La tua libreria</a></li>
           </ul>
-          <ul class="m_top_10">
+          <ul class="m_top_10 xs-hidden">
             <li class="text_tras_up "><a  class="ms_text_white bold" href="">playlist</a></li>
-            <li ><a style="font-size: 22px; ; display: flex; align-items: center;" href=""><i class="fas fa-plus-square text_color-grey m_right_20 font_size_35"></i>Crea Playlist</a></li>
+            <li class="" ><a class="" href=""><i class="fas  fa-plus-square text_color-grey m_right_20 font_size_35"></i>Crea Playlist</a></li>
             <li class="m_top_bott_10"><a href="">Nome playlist</a></li>
             <li class="m_top_bott_10"><a href="">Nome playlist</a></li>
             <li class="m_top_bott_10"><a href="">Nome playlist</a></li>
@@ -40,9 +40,9 @@
         </div>
         <!-- footer  -->
         <div class="main-nav-footer">
-           <a  href=""><img class=" width_10 m_right_10" src="img/download.svg" alt="">Installa app</a>
-           <hr>
-          <a class="ms_text_white bold  font_size_18px" href=""><img class="m_right_10" src="img/profile.svg" alt=""> Federico Crudo</a>
+           <a class=""  href=""><img class=" width_10 m_right_10" src="img/download.svg" alt=""><span class="xs-hidden">Installa app</span> </a>
+           <hr class="xs-hidden">
+          <a class="ms_text_white bold   font_size_18px" href=""><img class="m_right_10" src="img/profile.svg" alt=""> <span class="xs-hidden">Federico Crudo</span> </a>
         </div>
       </section>
       <!-- sezione corpo destra -->
@@ -54,12 +54,12 @@
           <!-- sezione generi -->
           <div class="generi text_tras_up">
               <ul>
-                <li class="m_right_20"><a href="">in evidenza</a></li>
-                <li class="m_right_20"><a href="">podcast</a></li>
-                <li class="m_right_20"><a href="">classifiche</a></li>
-                <li class="m_right_20"><a href="">generi e mood</a></li>
-                <li class="m_right_20"><a href="">nuove uscite</a></li>
-                <li><a href="">scopri</a></li>
+                <li class="m_right_20 xs-width4"><a href="">in evidenza</a></li>
+                <li class="m_right_20 xs-width4"><a href="">podcast</a></li>
+                <li class="m_right_20 xs-width4"><a href="">classifiche</a></li>
+                <li class="m_right_20 xs-width4"><a href="">generi e mood</a></li>
+                <li class="m_right_20 xs-width2"><a href="">nuove uscite</a></li>
+                <li class="xs-width2"><a href="">scopri</a></li>
               </ul>
           </div>
           <!-- sezione recently -->
@@ -168,7 +168,7 @@
 
     </main>
     <footer>
-        <div class="info-song m_left15 ">
+        <div class="info-song pd_l_20 ">
             <ul>
               <li>
                 <img src="img/sinister.jpeg" alt="">
@@ -177,24 +177,45 @@
                 <h3 class="ms_text_white">Sinisters</h3>
                 <span class="text_color-grey text-underline" >Brano Name</span>
               </li>
-              <li class="text_color-grey font_size_18" >
+              <li class="text_color-grey font_size_18">
                 <i class="far fa-heart m_right_10"></i>
                 <i class="far fa-folder"></i>
               </li>
             </ul>
         </div>
-        <div class="track-tool ms_text_white">
+        <div class="track-tool   pd_t_b_10">
             <ul>
               <li><i class="fas fa-random font_size_18 m_right_25"></i></li>
-              <li><i class="fas fa-caret-left font_size_35 m_right_25"></i></li>
+              <li><i class="fas fa-chevron-left font_size_18 m_right_25"></i></li>
               <li><i class="far fa-play-circle font_size_35 m_right_25"></i></li>
-              <li><i class="fas fa-caret-right font_size_35 m_right_25"></i></li>
-              <li> <i style="font-size: 20px;" class="fas fa-redo-alt "></i></li>
+              <li><i class="fas fa-chevron-right font_size_18 m_right_25"></i></li>
+              <li> <i style="font-size: 16px;" class="fas fa-redo-alt "></i></li>
             </ul>
+            <div class="track-bar m_top_10 ms_text_white">
+              <span class="bold m_right_25">0:25</span>
+              <div class="bar m_right_25">
+                <div class="bar-checked"></div>
+              </div>
+              <span class="bold">4:35</span>
+            </div>
       </div>
-      <div class="">
-        dfaasd
-    </div>
+      <div class="track-tool-right">
+          <ul class="">
+            <li>
+            <i class="fas fa-list m_right_20"></i>
+            <i class="fas fa-desktop  m_right_20"></i>
+            </li>
+            
+            <li class="m_right_20"><i class="fas fa-volume-up"></i>
+            
+            </li>
+            <div class="bar m_right_25">
+                <div class="bar-checked"></div>
+              </div>
+            
+          </ul>
+      </div>
+      
         
 
     </footer>
