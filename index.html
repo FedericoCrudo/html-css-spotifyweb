@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" sizes="16x16" type="image/png" href="https://open.scdn.co/cdn/images/favicon16.19fc3918.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-  <title>Document</title>
+  <title>Spotify - Lettore Web</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -168,56 +169,65 @@
 
     </main>
     <footer>
-        <div class="info-song pd_l_20 ">
-            <ul>
-              <li>
-                <img src="img/sinister.jpeg" alt="">
-              </li>
-              <li class="m_l-r_20_30">
-                <h3 class="ms_text_white">Sinisters</h3>
-                <span class="text_color-grey text-underline" >Brano Name</span>
-              </li>
-              <li class="text_color-grey font_size_18">
-                <i class="far fa-heart m_right_10"></i>
-                <i class="far fa-folder"></i>
-              </li>
-            </ul>
-        </div>
-        <div class="track-tool   pd_t_b_10">
-            <ul>
-              <li><i class="fas fa-random font_size_18 m_right_25"></i></li>
-              <li><i class="fas fa-chevron-left font_size_18 m_right_25"></i></li>
-              <li><i class="far fa-play-circle font_size_35 m_right_25"></i></li>
-              <li><i class="fas fa-chevron-right font_size_18 m_right_25"></i></li>
-              <li> <i style="font-size: 16px;" class="fas fa-redo-alt "></i></li>
-            </ul>
-            <div class="track-bar m_top_10 ms_text_white">
-              <span class="bold m_right_25">0:25</span>
-              <div class="bar m_right_25">
-                <div class="bar-checked"></div>
-              </div>
-              <span class="bold">4:35</span>
+        <section id="bar-player">
+          <div class="info-song ">
+            <div class="player-img m_right_10">
+              <img src="img/sinister.jpeg" alt="">
             </div>
-      </div>
-      <div class="track-tool-right">
-          <ul class="">
-            <li>
-            <i class="fas fa-list m_right_20"></i>
-            <i class="fas fa-desktop  m_right_20"></i>
-            </li>
-            
-            <li class="m_right_20"><i class="fas fa-volume-up"></i>
-            
-            </li>
-            <div class="bar m_right_25">
-                <div class="bar-checked"></div>
-              </div>
-            
-          </ul>
-      </div>
-      
-        
+            <div class="information-song m_right_10">
+              <h3>Sinister</h3>
+              <span class="text-underline">Brano Nome</span>
+            </div>
+            <div class="icon ">
+              <a href="#"><i class="far fa-heart m_right_10"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+              
+         
+         
+            </div>
+          <div class="track-tool">
+              <div class="tool-song ms_text_white">
+                  <div class="icon-tool">
+                    <ul>
+                      <li><i class="fas fa-random fon m_right_10 xs-m-right"></i></li>
+                      <li><i class="fas fa-step-backward"></i></li>
+                      <li><i class="far fa-play-circle m_l-r_20 font_size_35 xs-m-right-left xs-font-size20"></i></li>
+                      <li><i class="fas fa-step-forward m_right_10 xs-m-right"></i></li>
+                      <li><i class="fas fa-redo-alt"></i></li>
+                    </ul>
+                  </div>
+                 <div class="track-bar">
+                    <span>0:14</span>
+                      <div class="bar-block">
+                        <div class="bar-checked"></div>
+                      </div>
+                    
+                    <span>3:20</span>
+                  
+                    
+                 </div>
+                 
+                </div>
 
+
+
+          </div>
+          <div class="audio-tool text_color-grey">
+              <ul>
+                <li class="m_right_10"><i class="fas fa-list-ul"></i></li>
+                <li class="m_right_10"><i class="fas fa-desktop"></i></li>
+                <li class="m_right_10">
+                  <i class="fas fa-volume-up"></i>
+                    
+                </li>
+               <div class="bar-block">
+                      <div class="bar-checked"></div>
+                    </div>
+              </ul>
+          </div>
+
+        </section>
     </footer>
   </div>
 

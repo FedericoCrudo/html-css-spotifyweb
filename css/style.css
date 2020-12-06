@@ -149,6 +149,10 @@ a{
     margin-right:20px;
     margin-left:20px ;
   }
+  .m_l-r_30{
+    margin-right:30px;
+    margin-left:30px ;
+  }
   .m_l-r_20_30{
     margin-right:28px;
     margin-left:20px ;
@@ -197,9 +201,13 @@ a{
   .pd_t_b_10{
     padding: 10px 0;
   }
+  
   /* border */
   .border-radius{
   border-radius: 50%;
+}
+body{
+  font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 .container {
   width: 100%;
@@ -315,10 +323,10 @@ main {
 .main-content .generi ul li a{
   color:#7D7F84 ;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   font-size: 15px;
 }
-.main-content .generi ul li:active::after{
+.main-content .generi ul li:hover::after{
   display: block;
   content : "";
   margin:  auto;
@@ -408,79 +416,112 @@ footer {
   bottom:0;
   left: 0;
   background-color: #282828;
-  display: flex;
-
+ 
 }
-footer .info-song {
-  display: flex;
-  flex-grow: 1;
+footer #bar-player{
+  width: 100%;
   height: 100%;
- }
-footer .info-song ul{
- display: flex;
- align-items: center;
+   display: flex;
+  justify-content: space-between;
+}
+footer #bar-player .info-song,footer #bar-player .audio-tool{
+  height: 100%;
+  width: 230px;
+  
+}
+footer #bar-player .info-song{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(221, 209, 209);
+}
+footer #bar-player .info-song .player-img{
+  width: 20%;
+}
+footer #bar-player .info-song .player-img img{
+  width: 100%;
+}
+footer #bar-player .info-song .information-song h3:hover,
+.information-song span:hover, .icon a:hover,
+#bar-player .audio-tool ul li:hover, 
+.track-tool .tool-song .icon-tool ul li:hover {
+  color: white;
 }
 
-footer .info-song ul li span:hover, .info-song
-ul li i:hover{
-    color: white;
-    cursor: pointer;
- }
-footer .info-song img{
-  width: 50px;
+footer #bar-player .track-tool{
+  width: 70%;
+  height: 100%;
+ 
 }
-footer .track-tool {
-  flex-grow: 5;
+#bar-player .track-tool .tool-song{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
-footer .track-tool ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
- }
- footer .track-tool .track-bar{
+#bar-player .track-tool .tool-song .icon-tool {
+  width: 100%;
+  margin-bottom:10px ;
+}
+
+
+#bar-player .track-tool .tool-song .icon-tool ul{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  color: rgb(221, 209, 209);
+}
+#bar-player .track-tool .tool-song .track-bar ul{
+  display: flex;
+}
+
+#bar-player .audio-tool ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: rgb(221, 209, 209);
+ justify-content: space-between;
+}
+  .bar-block{
+    height: 5px;
+    width: 50%;
+    background-color: grey;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+   .bar-block .bar-checked{
+  height: 5px;
+  width: 50%;
+  background-color: white;
+  border-radius: 15px;
+}
+.track-bar{
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .track-tool .track-bar .bar{
-  width: 35%;
-  background-color: #5A5A5A;
-  height: 3px;
-}
-footer .track-tool .track-bar .bar-checked,footer .track-tool-right .bar-checked{
-  width: 25%;
-  background-color: #ccc0c0;
-  height: 3px;
-}
-footer .track-tool-right{
-  height: 100%;
-  display:flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-footer .track-tool i, .track-tool-right i{
-  color: rgb(230, 211, 211);  
- }
-footer .track-tool i:hover, .track-tool-right i:hover{
-  color: white;  
-  cursor: pointer;
- }
- footer .track-tool-right ul{
-  display: flex;
-  align-items: center; 
-}
 
-footer .track-tool-right .bar{
-  width: 5vw;
-  background-color: #5A5A5A;
-  height: 3px;
-}
+
+
+
 @media screen and (max-width:500px) {
    .xs-hidden{
      display: none;
    }
+   .xs-m-right{
+     margin-right:5px ;
+   }
+   .xs-m-right-left{
+    margin: 0 10px;
+  }
+   .xs-font-size20{
+     font-size: 25px;
+   }
+
+
    .xs-width4{
      width: calc(100%/4 -10px);
    }
@@ -547,39 +588,12 @@ footer .track-tool-right .bar{
  .main-content .creato ul li h3,
  .main-content .artisti ul li h3{
   font-size: 15px;
-  
-}
-footer .info-song {
- padding-left: 1px;
- flex: 1;
- 
-}
-footer .info-song li{
-  margin:0 6px ;
-}
-footer .info-song li img{
-  width: 40px;
-}
-footer .info-song h3 {
-  font-size: 15px;
-}
-footer .info-song span, .info-song i {
-  font-size: 15px;
-}
-footer .track-tool{
-  margin:0 10px ;
-
-}
-
-footer .track-tool ul li i{
-  font-size: 20px;
-  margin-right: 15px;
-}
-footer .track-tool-right{
-  display: none;
-  width: 50%;
-}
-
+ }
 } 
 
+@media screen and (max-height:350px) {
+  .call-to-action{
+    display: none;
+  }
  
+}
