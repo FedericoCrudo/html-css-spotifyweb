@@ -566,11 +566,7 @@ footer #bar-player .track-tool{
   .main-content .generi ul  {
     margin:0 10px;
 }
-.main-content .generi ul li {
-  
-  margin-right:15px ;
-  margin-top: 5px;
-}
+
   .main-content .generi ul li a{
       font-size: 10px;   
   }
@@ -592,4 +588,13 @@ footer #bar-player .track-tool{
     display: none;
   }
  
+}
+
+
+@media screen and (max-width:1200px) {
+  .main-content .generi ul li {
+  
+  margin-right:15px ;
+  margin-top: 5px;
+}
 }
