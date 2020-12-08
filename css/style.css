@@ -314,12 +314,14 @@ main {
   margin-top:30px ;
   height: 20px;
 }
-.main-content .generi ul li{
-  display: inline-block;
+.main-content .generi ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
-.main-content .generi ul li{
-  display: inline-block;
-}
+
+
 .main-content .generi ul li a{
   color:#7D7F84 ;
   font-weight: bold;
@@ -520,14 +522,6 @@ footer #bar-player .track-tool{
    .xs-font-size20{
      font-size: 25px;
    }
-
-
-   .xs-width4{
-     width: calc(100%/4 -10px);
-   }
-   .xs-width2{
-     width: calc(100%/2 -10px); 
-   }
    .main-nav-header {
     background-image: url(../img/logo-small.svg);
     background-repeat: no-repeat;
@@ -570,10 +564,12 @@ footer #bar-player .track-tool{
     font-size: 12px;
   }
   .main-content .generi ul  {
-    margin:0 5px;
+    margin:0 10px;
 }
 .main-content .generi ul li {
-  margin-right:5px ;
+  
+  margin-right:15px ;
+  margin-top: 5px;
 }
   .main-content .generi ul li a{
       font-size: 10px;   
