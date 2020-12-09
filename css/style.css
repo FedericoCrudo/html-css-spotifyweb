@@ -428,7 +428,9 @@ footer #bar-player{
 }
 footer #bar-player .info-song,footer #bar-player .audio-tool{
   height: 100%;
-  width: 230px;
+  width: 20%;
+  
+  
   
 }
 footer #bar-player .info-song{
@@ -451,7 +453,7 @@ footer #bar-player .info-song .information-song h3:hover,
 }
 
 footer #bar-player .track-tool{
-  width: 70%;
+  width: 60%;
   height: 100%;
  
 }
@@ -481,6 +483,7 @@ footer #bar-player .track-tool{
 
 #bar-player .audio-tool ul {
   display: flex;
+  
   align-items: center;
   height: 100%;
   color: rgb(221, 209, 209);
@@ -565,6 +568,16 @@ footer #bar-player .track-tool{
   }
   .main-content .generi ul  {
     margin:0 10px;
+}
+#bar-player .audio-tool ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap ;
+  
+  
+}
+.information-song{
+  font-size: 15px;
 }
 
   .main-content .generi ul li a{
