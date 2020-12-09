@@ -252,7 +252,7 @@ main {
   width: 13%;
   margin-right:10px ;
 }
-.playlist ul: li:nth-of-type(2) a{
+.playlist ul li:nth-of-type(2) a{
   font-size: 22px;
    display: flex; 
    align-items: center;
@@ -580,7 +580,7 @@ footer #bar-player .track-tool{
 }
 
   .main-content .generi ul li a{
-      font-size: 10px;   
+      font-size: 12px;   
   }
   .main-content .recently ul  li, .main-content .creato ul li,
 .main-content .artisti ul li {
